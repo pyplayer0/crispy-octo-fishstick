@@ -11,3 +11,9 @@ tema_monster.append("메이루") # append로 list를 넣을 경우 전체가 하
 print(tema_monster) #ex) [1,2,3,4,[1,2,3]] < 이런느낌
 tema_monster.extend(heart_monster) # 그래서 extend를 사용해준다
 print(tema_monster)
+
+# list comprehension
+# new_list = [변수활용 for 변수 in 반복대상 if 조건]
+my_list = [1,2,3,4,5]
+new_list = [x for x in my_list if x < 4]
+print(new_list)
